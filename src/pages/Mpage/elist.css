@@ -1,0 +1,21 @@
+.t-Container{
+    border-radius: 12px;
+    overflow: hidden;
+    /* border: 1px solid #ddd; */
+}
+thead tr {
+    border-bottom: 2px solid black;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+
+thead th {
+    border-bottom: 2px solid black;
+    text-align: left;
+}
+tbody tr{
+      border-bottom: 2px solid black;
+}

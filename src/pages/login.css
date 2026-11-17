@@ -1,0 +1,143 @@
+/* 
+/* Main Container hai like body wala part */
+.main-container {
+    min-height: 100vh;
+    width: 100%;
+    background: lightblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+/* Welcome Section */
+.welcome {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.welcome h1 {
+    font-size: 36px;
+    color: #1e293b;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.welcome p {
+    font-size: 16px;
+    color: #64748b;
+}
+
+/* Login Cards ka box  */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    width: 100%;
+    max-width: 850px;
+    
+}
+
+/* hr ek individual card css*/
+.login-card {
+    background: white;
+    width: 50%;
+    padding: 45px 30px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border-top: 5px solid transparent;
+}
+
+/* Card Hover */
+.login-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px blue;
+}
+
+/* Employee Card */
+.employee {
+    border-top-color: #3b82f6;
+}
+.employee:hover{
+  border-top-color: darkgoldenrod;
+}
+
+/* Manager Card */
+.manager {
+    border-top-color: #16a34a;
+}
+.manager:hover{
+  border-top-color: #3b82f6;
+}
+
+/* Card Heading */
+.login-card h2 {
+    font-size: 25px;
+    color: #1e293b;
+    margin-bottom: 12px;
+}
+
+/* Card Paragraph p tag ka css*/
+.login-card p {
+    color: #64748b;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+/* Login Button ka css part hai */
+.login-btn {
+    width: 100%;
+    padding: 13px;
+
+    border: none;
+    border-radius: 8px;
+
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Employee Button */
+.employee-btn {
+    background: #3b82f6;
+}
+
+.employee-btn:hover {
+    background: #2563eb;
+}
+
+/* Manager Button yaha pr manager k button ka css hai */
+.manager-btn {
+    background: #16a34a;
+}
+
+.manager-btn:hover {
+    background: #15803d;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+
+    .login-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .login-card {
+        width: 100%;
+        max-width: 350px;
+        box-sizing: border-box;
+    }
+
+    .welcome h1 {
+        font-size: 28px;
+    }
+}

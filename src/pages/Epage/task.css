@@ -1,0 +1,60 @@
+.task{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    
+}
+.taskcard{
+    height:100px;
+    width: 550px;
+    border: 1px gray;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    padding-top: 10px;
+}
+.taskcard:hover{
+    background-color:lightgray ;
+    border-left: 5px solid green;
+    border-right: 5px solid green;
+}
+h3,h6{
+    text-align: left;
+    padding-left: 10px;
+}
+th{
+    background-color: white;
+}
+td{
+ background-color: #e2f6fe;
+}
+.notstart{
+    background-color: gray;
+    color: white;
+  width: auto;
+  padding-left: 5px;
+  border-radius: 10px;
+}
+.Mpriority{
+     background-color: lightskyblue;
+    color: white;
+  width: auto;
+  padding-left: 5px;
+  border-radius: 10px;
+
+}
+.Progress{
+    background-color: #ece75f;
+    color: white;
+  width: auto;
+  padding-left: 5px;
+  border-radius: 10px;
+}
+.high{
+     background-color: lightcoral;
+    color: white;
+  width: auto;
+  padding-left: 5px;
+  border-radius: 10px;
+
+}
