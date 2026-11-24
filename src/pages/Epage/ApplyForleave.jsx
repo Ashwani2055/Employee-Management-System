@@ -15,7 +15,8 @@ export default function ApplyForleave() {
   });
 
   const handleChange = (e) => {
-    setLeave({
+    setLeave(
+      {
       ...leave,
       [e.target.name]: e.target.value
     });
