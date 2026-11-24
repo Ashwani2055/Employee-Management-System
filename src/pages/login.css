@@ -1,18 +1,4 @@
-/* 
-/* Main Container hai like body wala part */
-.main-container {
-    min-height: 100vh;
-    width: 100%;
-    background: lightblue;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
-    box-sizing: border-box;
-}
-
-/* Welcome Section */
+/* /* 
 .welcome {
     text-align: center;
     margin-bottom: 45px;
@@ -30,7 +16,6 @@
     color: #64748b;
 }
 
-/* Login Cards ka box  */
 .login-container {
     display: flex;
     justify-content: center;
@@ -41,7 +26,7 @@
     
 }
 
-/* hr ek individual card css*/
+
 .login-card {
     background: white;
     width: 50%;
@@ -53,13 +38,13 @@
     border-top: 5px solid transparent;
 }
 
-/* Card Hover */
+
 .login-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 12px 30px blue;
 }
 
-/* Employee Card */
+
 .employee {
     border-top-color: #3b82f6;
 }
@@ -67,7 +52,7 @@
   border-top-color: darkgoldenrod;
 }
 
-/* Manager Card */
+
 .manager {
     border-top-color: #16a34a;
 }
@@ -75,21 +60,21 @@
   border-top-color: #3b82f6;
 }
 
-/* Card Heading */
+
 .login-card h2 {
     font-size: 25px;
     color: #1e293b;
     margin-bottom: 12px;
 }
 
-/* Card Paragraph p tag ka css*/
+
 .login-card p {
     color: #64748b;
     font-size: 15px;
     margin-bottom: 30px;
 }
 
-/* Login Button ka css part hai */
+
 .login-btn {
     width: 100%;
     padding: 13px;
@@ -105,7 +90,7 @@
     transition: all 0.3s ease;
 }
 
-/* Employee Button */
+
 .employee-btn {
     background: #3b82f6;
 }
@@ -115,7 +100,7 @@
 }
 
 /* Manager Button yaha pr manager k button ka css hai */
-.manager-btn {
+/* .manager-btn {
     background: #16a34a;
 }
 
@@ -123,7 +108,7 @@
     background: #15803d;
 }
 
-/* Responsive Design */
+
 @media (max-width: 600px) {
 
     .login-container {
@@ -140,4 +125,255 @@
     .welcome h1 {
         font-size: 28px;
     }
+}  */ 
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Main Container */
+
+.main-container {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    background-color: white;
+}
+
+/* Left Section */
+
+.login-left {
+    width: 51%;
+    min-height: 100vh;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    padding: 35px 5%;
+}
+
+/* Logo */
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #171717;
+}
+
+.logo span {
+    color: #6544a5;
+    font-size: 32px;
+    margin-right: 8px;
+}
+
+/* Login Content */
+
+.login-content {
+    width: 100%;
+    max-width: 415px;
+    margin: auto;
+}
+
+/* Welcome Heading */
+
+.welcome {
+    margin-bottom: 30px;
+}
+
+.welcome h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #080808;
+    margin-bottom: 12px;
+}
+
+.welcome p {
+    font-size: 16px;
+    color: #858595;
+}
+
+/* Login Form */
+
+.login-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+}
+
+.login-card label {
+    font-size: 16px;
+    color: #111111;
+    margin-top: 8px;
+}
+
+.login-card input {
+    width: 100%;
+    height: 49px;
+    border: 1px solid #d5d9e0;
+    border-radius: 5px;
+    padding: 0 14px;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.login-card input:focus {
+    border-color: #6544a5;
+    box-shadow: 0 0 0 3px rgba(101, 68, 165, 0.1);
+}
+
+/* Login Button */
+
+.login-btn {
+    width: 100%;
+    height: 49px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #60429c;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #4b3182;
+}
+
+/* Error */
+
+.error-message {
+    color: red;
+    font-size: 14px;
+}
+
+/* Footer */
+
+.login-footer {
+    text-align: center;
+    margin-top: 18px;
+    color: #858595;
+    font-size: 14px;
+}
+
+/* Right Section */
+
+.login-right {
+    width: 49%;
+    min-height: 100vh;
+    background: linear-gradient(
+        135deg,
+        #b59be7,
+        #9978d4
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Right Content */
+
+.right-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.illustration {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    max-width: 400px;
+    padding: 30px;
+}
+
+.illustration span {
+    display: inline-block;
+    background: white;
+    color: #6544a5;
+    padding: 12px 25px;
+    border-radius: 12px;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.illustration h1 {
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+.illustration p {
+    font-size: 17px;
+    line-height: 1.6;
+    color: #f4efff;
+}
+
+.illustration-icon {
+    font-size: 130px;
+    margin-top: 35px;
+}
+
+/* Decorative Circles */
+
+.circle {
+    position: absolute;
+    border: 2px solid rgba(255,255,255,0.3);
+    border-radius: 50%;
+}
+
+.circle-one {
+    width: 300px;
+    height: 300px;
+    top: 8%;
+    right: -100px;
+}
+
+.circle-two {
+    width: 200px;
+    height: 200px;
+    bottom: 8%;
+    left: -70px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+
+    .main-container {
+        flex-direction: column;
+    }
+
+    .login-left {
+        width: 100%;
+        padding: 25px;
+    }
+
+    .login-content {
+        margin: 70px auto;
+    }
+
+    .login-right {
+        display: none;
+    }
+
+    .welcome h1 {
+        font-size: 32px;
+    }
+
 }

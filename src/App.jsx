@@ -18,7 +18,8 @@ import ApplyForleave from "./pages/Epage/ApplyForleave";
 import Mdashboard from "./pages/Mpage/Mdashboard.jsx";
 import Attendance from "./pages/Mpage/Attendance";
 import Addemployee from "./pages/Mpage/Addemployee.jsx";
-import Profile from "./pages/Epage/Profile.jsx";
+// import Profile from "./pages/Epage/Profile.jsx";
+import Profile from "./pages/Epage/Profile";
 import Employeelist from "./pages/Mpage/Employeelist.jsx";
 import Task from "./pages/Epage/Task.jsx";
 
