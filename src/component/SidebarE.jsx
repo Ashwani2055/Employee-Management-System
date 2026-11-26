@@ -3,9 +3,9 @@ import "./Sidebar.css";
 export default function SidebarE() {
     return (   
         <div className="sidebar">
-            <div>
+            {/* <div>
                 <h3 style={{ color: 'white',position:'fixed'}}>Employee DashBoard</h3>
-            </div>
+            </div> */}
          <ul>
                 <li>
                     <NavLink to="/employee/dashboard">
@@ -20,7 +20,7 @@ export default function SidebarE() {
                 </li>
 
                 <li>
-                    <NavLink to="/employee/leave-status">
+                    <NavLink to="/employee/leave">
                         My Leave
                     </NavLink>
                 </li>

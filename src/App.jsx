@@ -22,6 +22,7 @@ import Addemployee from "./pages/Mpage/Addemployee.jsx";
 import Profile from "./pages/Epage/Profile";
 import Employeelist from "./pages/Mpage/Employeelist.jsx";
 import Task from "./pages/Epage/Task.jsx";
+import MyLeave from "./pages/Epage/MyLeave.jsx";
 
 
 const router = createBrowserRouter([
@@ -53,7 +54,12 @@ const router = createBrowserRouter([
              {
                 path: "task",
                 element: <Task/>
+            },
+             {
+                path: "leave",
+                element: <MyLeave/>
             }
+
         ]
     },
 

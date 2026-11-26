@@ -1,17 +1,31 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-export default function MyNavbar()
-{
-    return(
-        <>
-    
-    <div className='nav' style={{ color: 'white',position:'fixed',paddingLeft:20}}>
-      <h3>Dashboard</h3>
+import "./MyNavbar.css";
+import { useNavigate } from "react-router-dom";
 
-    </div>
-        
-        </>
-    )
+export default function MyNavbar() {
+
+    const navigate = useNavigate();
+
+    const employeeName = "Rahul";
+
+    const handleLogout = () => {
+        navigate("/");
+    };
+
+    return (
+        <div className="topbar">
+
+            <h3>EMS</h3>
+
+            <div className="topbar-right">
+
+                <span>Welcome, {employeeName}</span>
+
+                <button onClick={handleLogout}>
+                    Logout
+                </button>
+
+            </div>
+
+        </div>
+    );
 }

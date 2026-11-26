@@ -1,45 +1,48 @@
 
-import { useState } from "react";
-import "./ApplyLeave.css";
+import { useContext } from "react";
+import EContext from "./EContext";
+import './ApplyLeave.css';
 
 export default function ApplyForleave() {
 
-  const [leave, setLeave] = useState({
-    employeeId: "",
-    employeeName: "",
-    department: "",
-    leaveType: "",
-    fromDate: "",
-    toDate: "",
-    reason: ""
-  });
+  // const [leave, setLeave] = useState({
+  //   employeeId: "",
+  //   employeeName: "",
+  //   department: "",
+  //   leaveType: "",
+  //   fromDate: "",
+  //   toDate: "",
+  //   reason: ""
+  // });
 
-  const handleChange = (e) => {
-    setLeave(
-      {
-      ...leave,
-      [e.target.name]: e.target.value
-    });
-  };
+  // const handleChange = (e) => {
+  //   setLeave(
+  //     {
+  //     ...leave,
+  //     [e.target.name]: e.target.value
+  //   });
+  // };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
 
-    console.log(leave);
+  //   console.log(leave);
 
-    alert("Leave Application Submitted Successfully!");
+  //   alert("Leave Application Submitted Successfully!");
 
-    setLeave({
-      employeeId: "",
-      employeeName: "",
-      department: "",
-      leaveType: "",
-      fromDate: "",
-      toDate: "",
-      reason: ""
-    });
-  };
+  //   setLeave({
+  //     employeeId: "",
+  //     employeeName: "",
+  //     department: "",
+  //     leaveType: "",
+  //     fromDate: "",
+  //     toDate: "",
+  //     reason: ""
+  //   });
+  // };
+  const context = useContext(EContext);
 
+const { leave, handleChange, handleSubmit } = context;
   return (
     <div className="leave-container">
 

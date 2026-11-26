@@ -82,14 +82,10 @@ export default function Login() {
 
         e.preventDefault();
 
-        // Check Manager Login
-        if (
-            email === manager.email &&
-            password === manager.password
-        ) {
-
+       
+        if (email ===manager.email && password ===manager.password)        
+         {
             navigate("/manager/dashboard");
-
         }
 
         // Check Employee Login
